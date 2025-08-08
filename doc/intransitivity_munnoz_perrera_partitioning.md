@@ -9,7 +9,7 @@
 
 ## Statement
 
-Let \( N = K \cdot M \) with \( M > 2 \) and \( K, M \in \mathbb{N} \).  
+Let $ N = K \cdot M $ with \( M > 2 \) and \( K, M \in \mathbb{N} \).  
 Let \( D_1, \dots, D_N \) be the **Muñoz–Perera dice** with sides given by:
 
 \[
