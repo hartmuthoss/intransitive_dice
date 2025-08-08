@@ -21,6 +21,7 @@ These dice form the standard **intransitive cycle**:
 $$
 D_N > D_{N-1} > \dots > D_2 > D_1 > D_N
 $$
+
 meaning $P(D_i > D_{i-1}) > 0.5$ for all $i$, indices taken modulo $N$.
 
 Partition each $D_i$ into $K$ **disjoint** $M$-sided dice
