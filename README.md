@@ -11,12 +11,12 @@ The aim is to find as long a list as possible of six-sided, intransitive pairs o
 * or each pair of dice loses to another pair of dice in the long run, i.e. `P(D_1>D_2) < 0.5, P(D_2>D_3) < 0.5,..., P(D_(K-1)>D_K) < 0.5, P(D_K>D_1) < 0.5`.
 
 ## Introduction
-[Intransitivity Munnoz Perrera Partitioning](doc/intransitivity_munnoz_perrera_partitioning.md)
+
 Muñoz-Perera's formula for N>=3: "To obtain a set of N fair intransitive dice of N faces it is enough to set the values `v_n,j = (j-1)*N+(n-j)%(N)+1 for n,j=1,...,N.`
 Using this expression, it can be verified that `P(D_m < D_n) = 0.5 + 1/(2*N) - ((n-m)%N)/(N*N)`. So each die beats `floor(N/2-1)` dice in the set."
 
 The path `{ D_N,..., D_2, D_1, D_N }` is always intransitive for those Muñoz-Perera dice, since `P(D_N > D_(N-1)) > 0.5,..., P(D_2 > D_1) > 0.5, P(D_1 > D_N) > 0.5`
-for these dice (see https://pereradrian.github.io/doc/adrian_munnoz_perera_generalized_intransitive_dice_2024.pdf)
+for these dice (see ["A generalization of intransitive dice" by Adrian Muñoz-Perera](https://pereradrian.github.io/doc/adrian_munnoz_perera_generalized_intransitive_dice_2024.pdf))
 
 This relation seems to remain unchanged, if N N-sided Muñoz-Perera dice with N = K\*M are partitioned into N tuples of M-sided dice, where each tuple has K M-sided dice 
 and the rolled sum of the K M-sided dice in the tuple counts. 
@@ -99,9 +99,14 @@ popd
 ```
 Open file `build_win64/intransive_dice.sln` in Visual Studio 2022 for debugging and development.
 
-
-
-
+Use the following commands to build and run this project on Linux:
+```
+mkdir -p ./build_linux
+pushd ./build_linux
+cmake -G "Unix Makefiles" ..
+make -j4
+./intransitive_dice_generator
+```
 
 ## Appendix
 
