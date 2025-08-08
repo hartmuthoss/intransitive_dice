@@ -25,16 +25,21 @@ $$
 meaning $P(D_i > D_{i-1}) > 0.5$ for all $i$, indices taken modulo $N$.
 
 Partition each $D_i$ into $K$ **disjoint** $M$-sided dice
+
 $$
 T_{i,1}, \dots, T_{i,K}
 $$
+
 such that the union of the $K$ dice’s faces is exactly the set of faces of $D_i$.  
+
 Define the **tuple die** $\hat{D}_i$ as the sum of one roll from each of its $K$ components:
+
 $$
 \hat{D}_i := T_{i,1} + T_{i,2} + \dots + T_{i,K}.
 $$
 
 **Claim:** The original Muñoz–Perera intransitive cycle is preserved:
+
 $$
 P(\hat{D}_N > \hat{D}_{N-1}) > 0.5, \quad \dots, \quad P(\hat{D}_1 > \hat{D}_N) > 0.5.
 $$
@@ -54,9 +59,11 @@ Key properties:
 ### 2. Block Partitioning
 
 Partition $D_n$ into $K$ consecutive **blocks** of size $M$:
+
 $$
 B_{n,b} = \{ v_{n,(b-1)M+1}, \dots, v_{n,bM} \}.
 $$
+
 This partitioning is identical across all dice, differing only by the cyclic shifts of the MP construction.
 
 ### 3. Preservation of Local Majority
