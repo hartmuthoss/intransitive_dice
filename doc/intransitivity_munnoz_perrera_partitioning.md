@@ -32,16 +32,16 @@ $$
 
 such that the union of the $K$ dice’s faces is exactly the set of faces of $D_i$.  
 
-Define the **tuple die** $D^t_i$ as the sum of one roll from each of its $K$ components:
+Define the **tuple die** $D^T_i$ as the sum of one roll from each of its $K$ components:
 
 $$
-D^t_i := T_{i,1} + T_{i,2} + \dots + T_{i,K}.
+D^T_i := T_{i,1} + T_{i,2} + \dots + T_{i,K}.
 $$
 
 **Claim:** The original Muñoz–Perera intransitive cycle is preserved:
 
 $$
-P(D^t_N > D^t_{N-1}) > 0.5, \quad \dots, \quad P(D^t_1 > D^t_N) > 0.5.
+P(D^T_N > D^T_{N-1}) > 0.5, \quad \dots, \quad P(D^T_1 > D^T_N) > 0.5.
 $$
 
 ---
@@ -78,8 +78,8 @@ This follows from the uniform cyclic shift pattern: no block can invert the majo
 
 ### 4. Summation (Convolution) Step
 
-The tuple die $D^t_a$ is the sum of $K$ **independent** block dice $X_{a,1}, \dots, X_{a,K}$.  
-Similarly for $D^t_b$. Let $Y_p = X_{a,p} - X_{b,p}$.
+The tuple die $D^T_a$ is the sum of $K$ **independent** block dice $X_{a,1}, \dots, X_{a,K}$.  
+Similarly for $D^T_b$. Let $Y_p = X_{a,p} - X_{b,p}$.
 
 - Each $Y_p$ has $P(Y_p > 0) > 0.5$.
 - The total difference is $Y = \sum_{p=1}^K Y_p$.
@@ -90,7 +90,7 @@ In fact, the advantage typically **increases** with $K$.
 
 ### 5. Conclusion
 
-Since every adjacent pair in the MP cycle preserves its majority advantage after partitioning and summing, the entire cycle is preserved for the tuple dice $D^t_i$.
+Since every adjacent pair in the MP cycle preserves its majority advantage after partitioning and summing, the entire cycle is preserved for the tuple dice $D^T_i$.
 
 ---
 
